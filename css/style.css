@@ -76,7 +76,7 @@ html {
 		text-decoration: none;
 	}
 	img{
-		max-width:100%;
+		max-width: 100%;
 	}
 	.centerfix{
 		max-width: 1170px;
@@ -120,21 +120,24 @@ header{
 		position: relative;
 		color: #fff;
 		font-family: 'Lato Light', sans-serif;
+		border-bottom: 4px solid #4bcaff;
+		font-size: 0;
 	}
-		.slider ul li h2{
+		.slider .slide-text-wrapper{
 			position: absolute;
 			top: 350px;
-			left: 650px;
-			font-size: 3em;
+			left: 44%;
+		}
+		.slider ul li h2{
+			font-size: 48px;
+			font-weight: 300;
 		}
 			.slider ul li h2 strong{
 				font-family: 'Lato Bold', sans-serif;
 			}
 		.slider ul li p{
-			position: absolute;
-			top: 420px;
-			left: 650px;
-			font-size: 1.125em;
+			font-size: 18px;
+			font-weight: 300;
 		}
 	.unslider-nav{/* кнопки навгации при дефолте видны только в панели разработчика - проявим их явно*/
 		margin: 0 auto;
