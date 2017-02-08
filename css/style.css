@@ -111,7 +111,6 @@ header{
 				header a:focus{
 					font-weight: bold;
 				}
-
 /*slider styles*/
 .slider img{
 	width: 100%;
@@ -121,28 +120,43 @@ header{
 		color: #fff;
 		font-family: 'Lato Light', sans-serif;
 		border-bottom: 4px solid #4bcaff;
-		font-size: 0;
+		font-size: 0; /*чтобы небыло снизу белой полосы*/
 	}
-		.slider .slide-text-wrapper{
+		.slide-text-wrapper{
+			max-width: 675px; /*чтобы не вылазил за границы*/
 			position: absolute;
-			top: 350px;
+			top: 40%;
 			left: 44%;
 		}
 		.slider ul li h2{
 			font-size: 48px;
 			font-weight: 300;
 		}
-			.slider ul li h2 strong{
-				font-family: 'Lato Bold', sans-serif;
+			.slider ul li h2 span{
+				font-weight: bold;
 			}
 		.slider ul li p{
+			margin-top: 20px;
 			font-size: 18px;
 			font-weight: 300;
 		}
+		.download-btn{
+			display: inline-block;
+			margin-top: 39px;
+			padding:  20px 50px;
+			border:  2px solid #fff;
+			border-radius: 5px;
+			font-size: 15px;
+			font-weight: bold;
+			text-transform: uppercase;
+		}
+		.download-btn:hover{
+			border-color: #4bcaff;
+		}
 	.unslider-nav{/* кнопки навгации при дефолте видны только в панели разработчика - проявим их явно*/
-		margin: 0 auto;
+		margin: -20px auto 0 auto; /*чтобы не было белого отступа после слайдера*/
 		position: relative;
-		top: -40px;
+		top: -15px; /*чтобы поднять повыше*/
 	}
 		.unslider-nav ol {
 		  list-style: none;
@@ -150,50 +164,69 @@ header{
 		}
 		.unslider-nav ol li {
 		  display: inline-block;
-		  width: 6px;
-		  height: 6px;
+		  width: 12px;
+		  height: 12px;
 		  margin: 0 4px;
 		  background: transparent;
-		  border-radius: 5px;
+		  border-radius: 10px;
 		  overflow: hidden;
 		  text-indent: -999em;
 		  border: 1px solid #fff;
 		  cursor: pointer;
 		}
 		.unslider-nav ol li.unslider-active {
-		  background: #4bcaff;
+			width: 15px;
+		  height: 15px;
+			background: #4bcaff;
 		  border: 1px solid #4bcaff;
 		  cursor: default;
 		}
 /*news-block styles*/
-.block-news{
-	display: flex;
-	justify-content: space-between;
+.features{
+	background-color: #f9f9f9;
+	text-align: center;
+	color: #414042;
+	border-bottom: 1px solid #e7e7e7;
+	padding: 30px 0 50px 0;
+
 }
-	.block-news article{
-		width: 31.6%;
-		margin: 33px 0 52px 0;
+	.features h2{
+		text-transform: lowercase;
+		font-family: 'Lato Black', sans-serif;
+		font-size: 36px;
 	}
-	.block-news img{
+	.features h3{
+		text-transform: lowercase;
+		font-size: 20px;
+		font-family: 'Lato Light', sans-serif;
+	}
+	.features .centerfix{
+		margin-top: 65px;
+		display: flex;
+		justify-content: space-between;
+	}
+	.features article{
+		width: 28%;
+		text-align: center;
+	}
+	.features article img{
 		display: block;
 		margin: 0 auto;
 		max-width: 100%;
 	}
-	.block-news h2{
-		font-size: 1.375em;
-		font-family: 'Roboto Condensed', sans-serif;
-		margin: 20px 0 15px 0;
+	.features article h2{
+		font-size: 15px;
+		font-weight: bold;
+		margin: 30px 0;
+		text-transform: uppercase;
+		color: #414042;
 	}
-		.block-news h2 a{
-			text-transform: uppercase;
-			color: #f45a40;
-		}
-			.block-news h2 a:hover{
-				text-decoration: underline;
-			}
-	.block-news p{
+	.features article p{
 		font-size: 0.875em;
 		padding-bottom: 3px;
+		color: #838383;
+		font-family: 'Myriad Pro Regular', sans-serif;
+		line-height: 1.4;
 	}
 /*catalog styles*/
 .catalog{
