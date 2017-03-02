@@ -441,7 +441,7 @@ footer{
 		font-size: 10px;
 	}
 	.download-btn{
-		padding:  10px 15px;
+		padding: 10px 15px;
 		font-size: 10px;
 	}
 	.features .centerfix{
@@ -471,7 +471,8 @@ footer{
 			margin-right: 10px;
 		}
 		.video-content p{
-		padding: 0 10%;}
+			padding: 0 10%;
+		}
 @media screen and (max-width:580px) {
 	.block-catalog{
 		flex-direction: column;
@@ -483,29 +484,27 @@ footer{
 	.slide-text-wrapper{
 		top: 5%;
 	}
-		.slider ul li h2{
+		.slider ul li h2,
+		.video-content h2,
+		.subscribe h2{
 			font-size: 20px;
 		}
 		.download-btn{
 			padding:  10px;
 			font-size: 10px;
 		}
-	.features{
-		padding: 10px 0;}
-	.features .centerfix{
-		margin-top: 10px;	}
-	.catalog{
-		padding: 10px 0;}
-		.block-catalog{
-			margin-top: 10px;}
+	.features,
+	.catalog,
 	.video-section{
-		padding: 10px 0;}
-		.video-content h2{
-			font-size: 20px;}
-			.video-content p{
-			font-size: 12px;}
-	.subscribe h2{
-		font-size: 20px;	}
+		padding: 10px 0;
+	}
+	.features .centerfix,
+	.block-catalog{
+		margin-top: 10px;
+	}
+	.video-content p{
+		font-size: 12px;
+	}
 	.subscribe .downloadnow-btn{
 		margin-top: 15px;
 		padding: 10px;
@@ -530,8 +529,10 @@ footer{
 		}
 		.features h2,
 		.catalog h2{
-			font-size: 20px;}
+			font-size: 20px;
+		}
 		.features h3,
 		.catalog h3{
-			font-size: 18px;}
+			font-size: 18px;
+		}
 }
